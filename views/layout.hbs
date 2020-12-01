@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>Node Example for Docker Exercise</h1>
+
+  <form method="GET" action="/contactsAll">
+    <label for="All">Receive again all Contacts </label>
+    <input name="All" type="submit" value="Get All Contacts">
+  </form>
+  <br>
+
+  <form method="GET" action="/contact/lastname/Smith">
+    <label for="Smith">Receive only contact Smith</label>
+    <input name="Smith" type="submit" value="Get Smith">
+  </form>
+  <br>
+  <form method="GET" action="/contact/lastname/Douglas">
+    <label for="Douglas">Receive only contact Smith</label>
+    <input name="Douglas" type="submit" value="Get Douglas">
+  </form>
+
+  {{{body}}}
+</body>
+
+</html>
